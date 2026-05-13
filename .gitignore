@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+data/snapshots/*.json
+data/reports/*.md
+!data/snapshots/.gitkeep
+!data/reports/.gitkeep
+.playwright/
+coverage/

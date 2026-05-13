@@ -1,0 +1,29 @@
+{
+  "name": "job-signal-agent",
+  "version": "0.1.0",
+  "description": "A TypeScript/Playwright job-search monitor that checks narrowly scoped Built In search URLs, scores matching roles, diffs results, and generates Markdown reports.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "job-agent-search": "tsx src/index.ts",
+    "job-agent-search:debug": "JOB_AGENT_HEADLESS=false tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.53.0",
+    "dotenv": "^16.4.7",
+    "tsx": "^4.19.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@types/node": "^22.10.7",
+    "eslint": "^9.18.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.20.0",
+    "vitest": "^2.1.8"
+  }
+}
